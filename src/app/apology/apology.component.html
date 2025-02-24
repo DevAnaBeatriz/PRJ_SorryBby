@@ -1,0 +1,29 @@
+    <div class="container">
+    <div class="heart-images">
+        <div class="floating-heart"></div>
+        <div class="floating-heart"></div>
+        <div class="floating-heart"></div>
+        <div class="floating-heart"></div>
+        <div class="floating-heart"></div>
+    </div>
+        <div class="heart"></div>
+        <h2>Amor, você me desculpa? </h2>
+        
+        <div class="buttons">
+            <button (click)="changeHeartColor()">Simmm lindoca!!</button>
+            <button 
+                (mouseenter)="moveNoButton()" 
+                (click)="moveNoButton()" 
+                [ngStyle]="noButtonStyle">
+                Não Desculpo.
+            </button>
+        </div>
+    
+        <p *ngIf="showLoveMessage" class="love-message">Aaaah, eu te amo, amorzinho!</p>
+    </div>
+
+
+
+ 
+        
+  
