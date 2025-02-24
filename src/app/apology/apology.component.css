@@ -72,8 +72,10 @@
     color: #ff69b4;
     font-weight: bold;
     margin-top: 20px;
+    z-index: 999; 
     animation: fadeIn 1s ease-in-out;
     font-family: Arial, Helvetica, sans-serif;
+    text-shadow: -2px 2px 0px #000000;
   }
   
 
@@ -84,6 +86,8 @@
   h2{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    z-index: 999; 
+    text-shadow: -2px 2px 0px #000000;
   }
 
   .background-img-right {
@@ -113,6 +117,8 @@
     width: 100vw;
     height: 100vh;
     pointer-events: none; 
+    z-index: -1;
+    background-repeat: no-repeat;
 }
 
 .floating-heart {
@@ -151,58 +157,55 @@
 }
 
 .floating-heart:nth-child(1) { top: 5%; left: 10%; }
-.floating-heart:nth-child(2) { top: 20%; left: 70%; }
-.floating-heart:nth-child(3) { top: 50%; left: 30%; }
+.floating-heart:nth-child(2) { top: 40%; left: 90%; }
+.floating-heart:nth-child(3) { top: 50%; left: 20%; }
 .floating-heart:nth-child(4) { top: 70%; left: 50%; }
 .floating-heart:nth-child(5) { top: 90%; left: 20%; }
-.floating-heart:nth-child(6) { top: 100%; left: 100%; }
+.floating-heart:nth-child(6) { top: 90%; left: 80%; }
+.floating-heart:nth-child(7) { top: 5%; left: 90%; }
 
 .floating-heart:nth-child(1),
 .floating-heart:nth-child(1)::before,
 .floating-heart:nth-child(1)::after {
     background-image: url('https://preview.redd.it/1n5qbrmppg491.jpg?auto=webp&s=186ac46f2582b64100ab1135383bba57aaae777f');
-    background-repeat: no-repeat;
-    z-index: -1;
+   
 }
 
 .floating-heart:nth-child(2),
 .floating-heart:nth-child(2)::before,
 .floating-heart:nth-child(2)::after {
     background-image: url('https://d.newsweek.com/en/full/1972375/two-cats-cuddling.jpg');
-    background-repeat: no-repeat;
-    z-index: -1;
+
 }
 
 .floating-heart:nth-child(3),
 .floating-heart:nth-child(3)::before,
 .floating-heart:nth-child(3)::after {
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoqTOIc1V__mMzvEIEhS6JpRZL5kRDfxKpcQ&s');
-    background-repeat: no-repeat;
-    z-index: -1;
 }
 
 .floating-heart:nth-child(4),
 .floating-heart:nth-child(4)::before,
 .floating-heart:nth-child(4)::after {
     background-image: url('https://preview.redd.it/lssl0gk0ylk61.jpg?width=640&crop=smart&auto=webp&s=c35741762cb122fe79847eb45b222ed7bec291c4');
-    background-repeat: no-repeat;
-    z-index: -1;
 }
 
 .floating-heart:nth-child(5),
 .floating-heart:nth-child(5)::before,
 .floating-heart:nth-child(5)::after {
     background-image: url('https://media.istockphoto.com/id/1097957242/photo/golden-british-kitten-hugs-with-love-his-girlfriend-cat.jpg?s=612x612&w=0&k=20&c=wfMvxP_rzRqLnOcao7Nu0-RzzEOP0OwmAxfzwHNKtRk=');
-    background-repeat: no-repeat;
-    z-index: -1;
 }
 
 .floating-heart:nth-child(6),
 .floating-heart:nth-child(6)::before,
 .floating-heart:nth-child(6)::after {
-    background-image: url('https://media.istockphoto.com/id/1097957242/photo/golden-british-kitten-hugs-with-love-his-girlfriend-cat.jpg?s=612x612&w=0&k=20&c=wfMvxP_rzRqLnOcao7Nu0-RzzEOP0OwmAxfzwHNKtRk=');
-    background-repeat: no-repeat;
-    z-index: -1;
+    background-image: url('https://i.pinimg.com/474x/c8/c6/f8/c8c6f8e76296cad976b3a143848761f2.jpg');
+}
+
+.floating-heart:nth-child(7),
+.floating-heart:nth-child(7)::before,
+.floating-heart:nth-child(7)::after {
+    background-image: url('https://alldiamondpainting.com/cdn/shop/products/Romantic_Cat_Couple_96c7faec-ffcd-40fc-a522-a758b2f56f24.jpg?v=1680521223');
 }
 
 @keyframes float {
